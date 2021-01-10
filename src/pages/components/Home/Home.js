@@ -10,7 +10,7 @@ function Home() {
     
     useEffect(() => {
         const indexInterval = setInterval(() => {
-            setIndex(prevIndex => prevIndex === 1 ? 0: prevIndex + 1)
+            setIndex(prevIndex => prevIndex === 1 ? 0: 1)
         }, 3500)
 
         return () => clearInterval(indexInterval)
@@ -26,7 +26,7 @@ function Home() {
 
     return (
         <div>
-            <div className="home container-fluid mt-5 pt-lg-5">
+            <div className="home container-fluid my-5 pt-lg-5 pb-5">
                 <div className="row pt-5">
                     <div className="offset-xl-2 col-xl-5 offset-lg-1 col-lg-6 offset-md-1 col-md-6 offset-sm-1 col-sm-10 offset-1 col-10 pb-5">
                         <h1 className="home-greeting">

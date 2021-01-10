@@ -8,7 +8,7 @@ import './navbar.css'
 function Navbar() {
     function handleClick(event) {
         event.preventDefault()
-        document.getElementById(event.target.name).scrollIntoView({behavior: "smooth"})
+        document.getElementById(event.target.name).scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})
     }
 
     return (
@@ -22,13 +22,13 @@ function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav ml-auto text-uppercase">
                         <li className="nav-item">
-                            <a name="about" onClick={handleClick} className="nav-link nav-link-grow-up navbar-item"><i className="fas fa-info-circle"></i> About</a>
+                            <a name="about" onClick={handleClick} onKeyDown={handleClick} className="nav-link nav-link-grow-up navbar-item"><i className="fas fa-info-circle"></i> About</a>
                         </li>
                         <li className="nav-item">
-                            <a name="projects" onClick={handleClick} className="nav-link nav-link-grow-up navbar-item"><i className="fas fa-desktop"></i> Projects</a>
+                            <a name="projects" onClick={handleClick} onKeyDown={handleClick} className="nav-link nav-link-grow-up navbar-item"><i className="fas fa-desktop"></i> Projects</a>
                         </li>
                         <li className="nav-item">
-                            <a name="contact" onClick={handleClick} className="nav-link nav-link-grow-up navbar-item"><i className="fas fa-address-book"></i> Contact</a>
+                            <a name="contact" onClick={handleClick} onKeyDown={handleClick} className="nav-link nav-link-grow-up navbar-item"><i className="fas fa-address-book"></i> Contact</a>
                         </li>
                     </ul>
                 </div>
