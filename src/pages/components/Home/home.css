@@ -1,7 +1,14 @@
+.home {
+    /*background-image: url('../../imgs/background.png');*/
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: contain;
+}
+
 .home-greeting {
     font-family: Roboto, sans-serif !important;
-    font-weight: bold !important;
-    font-size: 4rem;
+    font-weight: normal !important;
+    font-size: 3.5rem;
     color: rgba(255, 255, 255, 0.781);
 }
 
