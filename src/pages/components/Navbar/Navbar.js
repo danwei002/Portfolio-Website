@@ -1,30 +1,37 @@
 import React from "react"
 
+import './navbar.css'
+
+import { FaHome } from '@react-icons/all-files/fa/FaHome'
+
 function Navbar() {
     return (
-        <nav id="navbar-scrollspy" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="index.html">Daniel Wei</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <div>
+            <nav id="navbar-scrollspy" className="navbar fixed-top navbar-expand-lg navbar-dark bg-transparent">
+                <a className="navbar-brand navbar-item text-uppercase" href="index.html">Daniel Wei</a>
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto text-uppercase">
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-grow-up" href="#home"><i class="fas fa-home"></i> Home<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-grow-up" href="#about"><i class="fas fa-info-circle"></i> About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-grow-up" href="#projects"><i class="fas fa-desktop"></i> Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-grow-up" href="#contact"><i class="fas fa-address-book"></i> Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+                <div className="collapse navbar-collapse" id="navbarNav">
+                    <ul className="navbar-nav ml-auto text-uppercase">
+                        <li className="nav-item">
+                            <a className="nav-link nav-link-grow-up navbar-item " href="#home"> <span style={{justifyContent:"center", alignItems:"center"}}><FaHome/> Home</span> <span className="sr-only">(current)</span></a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link nav-link-grow-up navbar-item " href="#about"><i className="fas fa-info-circle"></i> About</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link nav-link-grow-up navbar-item " href="#projects"><i className="fas fa-desktop"></i> Projects</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link nav-link-grow-up navbar-item " href="#contact"><i className="fas fa-address-book"></i> Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        
     )
 }
 
