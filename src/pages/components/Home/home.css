@@ -5,17 +5,32 @@
     background-size: contain;
 }
 
-.home-container {
-    padding: 4rem 0px;
-    margin: 0px auto;
-    min-width: 80vw;
-}
-
 .home-greeting {
     font-family: Roboto, sans-serif !important;
     font-weight: normal !important;
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: rgba(255, 255, 255, 0.781);
+}
+
+.profile-picture {
+    border-radius: 50%;
+    border-style: solid;
+    width: 225px;
+    height: 225px;
+}
+
+.description-animation {
+    opacity: 1;
+    animation: fadeInAndOut 3.5s ease-in;
+}
+
+@media only screen and (min-device-width: 991px) {
+    .profile-picture {
+        border-radius: 50%;
+        border-style: solid;
+        width: 300px;
+        height: 300px;
+    }
 }
 
 /* Mobile devices, portrait */
@@ -23,7 +38,7 @@
     .home-greeting {
         font-family: Roboto, sans-serif !important;
         font-weight: normal !important;
-        font-size: 3rem;
+        font-size: 2.5rem;
         color: rgba(255, 255, 255, 0.781);
     }
 }
@@ -33,14 +48,9 @@
     .home-greeting {
         font-family: Roboto, sans-serif !important;
         font-weight: normal !important;
-        font-size: 3rem;
+        font-size: 2.5rem;
         color: rgba(255, 255, 255, 0.781);
     }
-}
-
-.description-animation {
-    opacity: 1;
-    animation: fadeInAndOut 3.5s ease-in;
 }
 
 @keyframes fadeInAndOut {

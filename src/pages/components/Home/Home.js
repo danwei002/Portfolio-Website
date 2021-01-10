@@ -1,9 +1,10 @@
 import React, {useState, useEffect} from "react"
 
+import profilePicture from "../../imgs/profilePic.jpg"
 import "./home.css"
 
 function Home() {
-    const choices= ["a Computer Enthusiast", "an avid Programmer"]
+    const choices= ["Computer Enthusiast", "avid Programmer"]
     const [index, setIndex] = useState(0)
     const [desc, setDesc] = useState(choices[0])
     
@@ -19,22 +20,25 @@ function Home() {
         setDesc(choices[index])
     }, [index, choices])
 
+    function handleClick() {
+        document.getElementById("about").scrollIntoView({behavior: "smooth"})
+    }
+
     return (
         <div>
-            <div className="home container-fluid min-vh-100 mt-5 pt-lg-5">
+            <div className="home container-fluid mt-5 pt-lg-5">
                 <div className="row pt-5">
-                    <div className="offset-lg-2 offset-md-2 col-lg-5 col-md-7 col-sm-12 col-12">
+                    <div className="offset-xl-2 col-xl-5 offset-lg-1 col-lg-6 offset-md-1 col-md-6 offset-sm-1 col-sm-10 offset-1 col-10 pb-5">
                         <h1 className="home-greeting">
                             <span style={{fontWeight:"bold", lineHeight:"150%"}}>Hi!</span><br/>
                             I'm Daniel, <br/><span key={desc} className="description-animation">{desc}</span>
                         </h1>
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="offset-lg-2 offset-md-2 col-lg-5 col-md-7 col-sm-12 col-12">
-                        <a className="mt-4 btn btn-primary py-2 px-3" href="#about">
+                        <button onClick={handleClick} className="mt-4 btn btn-primary py-2 px-3">
                             More About Me
-                        </a>
+                        </button>
+                    </div>
+                    <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 d-flex justify-content-center">
+                        <img src={profilePicture} alt="Me" className="profile-picture p-auto"/>
                     </div>
                 </div>
             </div>
