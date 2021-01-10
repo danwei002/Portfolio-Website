@@ -2,6 +2,7 @@ import React from "react"
 
 import Background from "./imgs/background.png"
 import Navbar from "./components/Navbar/Navbar"
+import Home from "./components/Home/Home"
 
 import "bootstrap/dist/css/bootstrap.min.css"
 
@@ -19,6 +20,7 @@ export default function App() {
       }}
     >
       <Navbar/>
+      <Home/>
     </div>
   )
 }

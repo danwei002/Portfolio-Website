@@ -1,0 +1,38 @@
+.home-greeting {
+    font-family: Roboto, sans-serif !important;
+    font-weight: bold !important;
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.781);
+}
+
+/* Mobile devices, portrait */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation: portrait) {
+    .home-greeting {
+        font-family: Roboto, sans-serif !important;
+        font-weight: bold !important;
+        font-size: 3rem;
+        color: rgba(255, 255, 255, 0.781);
+    }
+}
+
+/* Mobile devices, landscape */
+@media only screen and (min-device-width : 320px) and (max-device-width : 780px) and (orientation: landscape) {
+    .home-greeting {
+        font-family: Roboto, sans-serif !important;
+        font-weight: bold !important;
+        font-size: 3rem;
+        color: rgba(255, 255, 255, 0.781);
+    }
+}
+
+.description-animation {
+    opacity: 1;
+    animation: fadeInAndOut 3.5s ease-in;
+}
+
+@keyframes fadeInAndOut {
+    0% {opacity: 0;}
+    30% {opacity: 1;}
+    70% {opacity: 1;}
+    100% {opacity: 0;}
+}
