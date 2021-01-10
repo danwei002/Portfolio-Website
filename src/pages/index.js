@@ -8,7 +8,16 @@ import "bootstrap/dist/css/bootstrap.min.css"
 
 export default function App() {
   return (
-    <div className="min-vh-100" style={{backgroundImage:'url(${Background})'}}>
+    <div 
+      className="min-vh-100" 
+      style={{
+        backgroundColor:"#000214", 
+        backgroundImage: `url(${Background})`,
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "right bottom",
+        backgroundSize: "contain"
+      }}
+    >
       <Navbar/>
     </div>
   )
