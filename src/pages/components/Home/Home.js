@@ -21,12 +21,12 @@ function Home() {
 
     return (
         <div>
-            <div className="home container-fluid min-vh-100 mt-5 pt-5">
+            <div className="home container-fluid min-vh-100 mt-5 pt-lg-5">
                 <div className="row pt-5">
                     <div className="offset-lg-2 offset-md-2 col-lg-5 col-md-7 col-sm-12 col-12">
                         <h1 className="home-greeting">
                             <span style={{fontWeight:"bold", lineHeight:"150%"}}>Hi!</span><br/>
-                            I'm Daniel and I'm <br/><span key={desc} className="description-animation">{desc}</span>
+                            I'm Daniel, <br/><span key={desc} className="description-animation">{desc}</span>
                         </h1>
                     </div>
                 </div>

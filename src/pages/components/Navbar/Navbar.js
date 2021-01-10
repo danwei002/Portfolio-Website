@@ -6,6 +6,11 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './navbar.css'
 
 function Navbar() {
+    function handleClick(event) {
+        event.preventDefault()
+        document.getElementById(event.target.name).scrollIntoView({behavior: "smooth"})
+    }
+
     return (
         <div>
             <nav id="navbar-scrollspy" className="navbar navbar-expand-lg navbar-dark bg-transparent">
@@ -17,16 +22,13 @@ function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav ml-auto text-uppercase">
                         <li className="nav-item">
-                            <a className="nav-link nav-link-grow-up navbar-item" href="#home">Home<span className="sr-only">(current)</span></a>
+                            <a name="about" onClick={handleClick} className="nav-link nav-link-grow-up navbar-item"><i className="fas fa-info-circle"></i> About</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link nav-link-grow-up navbar-item" href="#about"><i className="fas fa-info-circle"></i> About</a>
+                            <a name="projects" onClick={handleClick} className="nav-link nav-link-grow-up navbar-item"><i className="fas fa-desktop"></i> Projects</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link nav-link-grow-up navbar-item " href="#projects"><i className="fas fa-desktop"></i> Projects</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link nav-link-grow-up navbar-item " href="#contact"><i className="fas fa-address-book"></i> Contact</a>
+                            <a name="contact" onClick={handleClick} className="nav-link nav-link-grow-up navbar-item"><i className="fas fa-address-book"></i> Contact</a>
                         </li>
                     </ul>
                 </div>
