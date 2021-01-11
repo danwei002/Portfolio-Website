@@ -4,7 +4,7 @@ import profilePicture from "../../imgs/profilePic.jpg"
 import "./home.css"
 
 function Home() {
-    const choices= ["Computer Enthusiast", "avid Programmer"]
+    const choices= ["a Computer Enthusiast", "an avid Programmer"]
     const [index, setIndex] = useState(0)
     const [desc, setDesc] = useState(choices[0])
     
@@ -34,7 +34,7 @@ function Home() {
                             I'm Daniel, <br/><span key={desc} className="description-animation">{desc}</span>
                         </h1>
                         <button onClick={handleClick} className="mt-4 btn btn-primary py-2 px-3">
-                            More About Me
+                            <span className="lead">Get To Know Me</span>
                         </button>
                     </div>
                     <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 d-flex justify-content-center">

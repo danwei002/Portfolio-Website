@@ -4,9 +4,6 @@ import Navbar from "./components/Navbar/Navbar"
 import Home from "./components/Home/Home"
 import About from "./components/About/About"
 
-import "bootstrap/dist/css/bootstrap.min.css"
-
-
 export default function App() {
   return (
     <div>
@@ -15,7 +12,6 @@ export default function App() {
       </Helmet>
 
       <div 
-        className="min-vh-100" 
         style={{
           backgroundColor:"#000214", 
         }}

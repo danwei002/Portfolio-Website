@@ -1,0 +1,17 @@
+[
+    {
+        "key": 1,
+        "label": "Java",
+        "percentage": 100
+    },
+    {
+        "key": 2,
+        "label": "C++",
+        "percentage": 90
+    },
+    {
+        "key": 3,
+        "label": "Python",
+        "percentage": 80
+    }
+]

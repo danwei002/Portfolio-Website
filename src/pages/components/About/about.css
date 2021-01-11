@@ -1,0 +1,50 @@
+.subheader {
+    font-weight: 600;
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.781);
+}
+
+.about-content {
+    color: rgba(255, 255, 255, 0.781);
+}
+
+.skillbar-outline {
+    z-index: 0;
+    height: 35px;
+    background-color: white;
+    width: 100%;
+    position: relative;
+}
+
+.skillbar-dynamic {
+    z-index: 1;
+    background-color: orange;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.skillbar-label {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: orangered;
+    width: 10%;
+    height: 100%;
+    color: white;
+}
+
+.skillbar-label span {
+    display: block;
+    background: rgba(0, 0, 0, 0.1);
+    height: 35px;
+    line-height: 35px;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
