@@ -1,8 +1,13 @@
-import React from "react"
+import React, {useState} from "react"
+import handleViewport from "react-in-viewport"
 import Skillbar from "./Skillbar"
 import skillData from "./SkillData.json"
 
+const ViewportBlock = handleViewport(Skillbar,)
+
 function SkillsList() {
+    const [inView, setInView] = useState(false)
+
     const skills = skillData.map(skill => 
         <Skillbar  
             key={skill.key} l
@@ -10,6 +15,7 @@ function SkillsList() {
             percentage={skill.percentage} 
             barColor="#008ac2"
             labelColor="#00668f"
+            inView={inView}
         />
     )
 
@@ -19,6 +25,7 @@ function SkillsList() {
                 <h2 className="subheader my-3">What am I good at?</h2>
                 {skills}
             </div>
+            <ViewportBlock onEnterViewport={() => setInView(true)}/>
         </div>
     )
 }

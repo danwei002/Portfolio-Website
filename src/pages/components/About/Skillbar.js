@@ -10,21 +10,24 @@ class Skillbar extends React.Component {
         super()
         this.state = {
             width: 0,
+            animationStarted: false
         }
     }
 
-    componentDidMount() {
-        this.interval = setInterval(() => {
-            this.setState(prevState => {
-                //return {width: prevState.width + (this.props.percentage) / 1000.0}
-                return {width: lerp(prevState.width, this.props.percentage + 1, 0.0077)}
-            })
-        }, 1)
-    }
-
     componentDidUpdate() {
-        if (this.state.width >= this.props.percentage) {
-            clearInterval(this.interval)
+        if (this.props.inView && !this.state.animationStarted) {
+            this.setState(prevState => {
+                return {width: prevState.width, animationStarted: true}
+            })
+            this.interval = setInterval(() => {
+                this.setState(prevState => {
+                    return {width: lerp(prevState.width, this.props.percentage + 1, 0.0077), animationStarted: prevState.animationStarted}
+                })
+            }, 1)
+        } else {
+            if (this.state.width >= this.props.percentage) {
+                clearInterval(this.interval)
+            }
         }
     }
 
