@@ -9,6 +9,7 @@
 }
 
 .skillbar-outline {
+    border-radius: 7px;
     z-index: 0;
     height: 35px;
     background-color: white;
@@ -17,8 +18,9 @@
 }
 
 .skillbar-dynamic {
+    border-radius: 7px;
     z-index: 1;
-    background-color: orange;
+    background-color: #008ac2;
     height: 100%;
     position: absolute;
     top: 0;
@@ -26,12 +28,13 @@
 }
 
 .skillbar-label {
+    border-radius: 7px;
     z-index: 2;
     position: absolute;
     top: 0;
     left: 0;
-    background-color: orangered;
-    width: 10%;
+    background-color: #00668f;
+    width: 17%;
     height: 100%;
     color: white;
 }

@@ -6,12 +6,22 @@
     },
     {
         "key": 2,
-        "label": "C++",
+        "label": "Python",
         "percentage": 90
     },
     {
         "key": 3,
-        "label": "Python",
+        "label": "C++",
         "percentage": 80
+    },
+    {
+        "key": 4,
+        "label": "JavaScript",
+        "percentage": 70
+    },
+    {
+        "key": 5,
+        "label": "HTML/CSS",
+        "percentage": 60
     }
 ]
