@@ -1,5 +1,6 @@
 import React from "react"
 
+/* Got this function from https://github.com/mattdesl/lerp */
 function lerp(v0, v1, t) {
     return v0*(1-t)+v1*t
 }
@@ -8,7 +9,7 @@ class Skillbar extends React.Component {
     constructor() {
         super()
         this.state = {
-            width: 0
+            width: 0,
         }
     }
 
@@ -31,8 +32,8 @@ class Skillbar extends React.Component {
         return (
             <div>
                 <div className="skillbar-outline">
-                    <div className="skillbar-label text-center"><span>{this.props.label}</span></div>
-                    <div style={{width: this.state.width + "%"}} className="skillbar-dynamic"></div>
+                    <div style={{backgroundColor: this.props.labelColor}} className="skillbar-label text-center"><span>{this.props.label}</span></div>
+                    <div style={{width: this.state.width + "%", backgroundColor: this.props.barColor}} className="skillbar-dynamic"></div>
                 </div>
                 <br/>
             </div>

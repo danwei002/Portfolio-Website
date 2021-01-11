@@ -16,12 +16,17 @@
     },
     {
         "key": 4,
-        "label": "JavaScript",
+        "label": "HTML/CSS",
         "percentage": 70
     },
     {
         "key": 5,
-        "label": "HTML/CSS",
+        "label": "JavaScript",
         "percentage": 60
+    },
+    {
+        "key": 6,
+        "label": "C#",
+        "percentage": 50
     }
 ]

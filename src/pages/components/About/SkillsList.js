@@ -3,7 +3,15 @@ import Skillbar from "./Skillbar"
 import skillData from "./SkillData.json"
 
 function SkillsList() {
-    const skills = skillData.map(skill => <Skillbar key={skill.key} label={skill.label} percentage={skill.percentage}/>)
+    const skills = skillData.map(skill => 
+        <Skillbar  
+            key={skill.key} l
+            label={skill.label} 
+            percentage={skill.percentage} 
+            barColor="#008ac2"
+            labelColor="#00668f"
+        />
+    )
 
     return (
         <div className="row">

@@ -9,7 +9,7 @@
 }
 
 .skillbar-outline {
-    border-radius: 7px;
+    border-radius: 5px;
     z-index: 0;
     height: 35px;
     background-color: white;
@@ -18,9 +18,8 @@
 }
 
 .skillbar-dynamic {
-    border-radius: 7px;
+    border-radius: 5px;
     z-index: 1;
-    background-color: #008ac2;
     height: 100%;
     position: absolute;
     top: 0;
@@ -28,12 +27,11 @@
 }
 
 .skillbar-label {
-    border-radius: 7px;
+    border-radius: 5px;
     z-index: 2;
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #00668f;
     width: 17%;
     height: 100%;
     color: white;
@@ -50,4 +48,18 @@
     -moz-border-radius-bottomleft: 3px;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
+}
+
+/* Mobile devices, portrait */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation: portrait) {
+    .skillbar-label {
+        border-radius: 5px;
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 32%;
+        height: 100%;
+        color: white;
+    }
 }
