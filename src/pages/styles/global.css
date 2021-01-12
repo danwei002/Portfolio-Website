@@ -6,3 +6,24 @@ body {
     color: rgba(255, 255, 255, 0.781);
     font-weight: bold;
 }
+
+/* From https://codepen.io/vavik96/pen/waBgya */
+.grow-hover-effect {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.37s;
+    transition-duration: 0.37s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+
+  .grow-hover-effect:hover, .grow-hover-effect:focus, .grow-hover-effect:active {
+    -webkit-transform: scale(1.27);
+    transform: scale(1.27);
+  }
