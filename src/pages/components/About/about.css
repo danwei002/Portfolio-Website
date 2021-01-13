@@ -68,6 +68,24 @@
     }
 }
 
+/* Tablets, portrait */
+@media only screen and (min-device-width : 250px) and (max-device-width : 880px) and (orientation: portrait) {
+    .skillbar-label {
+        border-radius: 5px;
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 25%;
+        height: 100%;
+        color: white;
+    }
+
+    .about-content {
+        font-size: 1.1rem;
+    }
+}
+
 /* Mobile devices, landscape */
 @media only screen and (min-device-width : 250px) and (max-device-width : 780px) and (orientation: landscape) {
     .skillbar-label {
