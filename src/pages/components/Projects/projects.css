@@ -1,5 +1,17 @@
 .project-tile {
     background-color: black;
-    width: 80%;
-    height: 20vh;
+    width: 95%;
+    height: 237px;
+}
+
+.project-tile h1 {
+    font-size: 1.27rem;
+    font-weight: 650;
+    color: white;
+}
+
+.project-tile p {
+    font-weight: 500;
+    font-size: 1.17rem;
+    color: rgb(233, 227, 227);
 }
