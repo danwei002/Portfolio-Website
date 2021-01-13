@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet"
 import Navbar from "./components/Navbar/Navbar"
 import Home from "./components/Home/Home"
 import About from "./components/About/About"
+import Projects from "./components/Projects/Projects"
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
         <Navbar/>
         <Home/>
         <About/>
+        <Projects/>
       </div>
     </div>
   )

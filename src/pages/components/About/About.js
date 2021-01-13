@@ -6,7 +6,7 @@ import "./about.css"
 
 function About() {
     return (
-        <div id="about" className="container-fluid pt-3">
+        <div id="about" className="container-fluid pt-3 pb-3">
             <AboutBasic />
             <SkillsList />
         </div>
