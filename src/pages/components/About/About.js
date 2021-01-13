@@ -1,7 +1,8 @@
 import React from "react"
 import AboutBasic from "./AboutBasic"
-import "./about.css"
 import SkillsList from "./SkillsList"
+
+import "./about.css"
 
 function About() {
     return (

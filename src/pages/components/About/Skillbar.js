@@ -26,7 +26,6 @@ class Skillbar extends React.Component {
             }, 1)
         } else {
             if (this.state.width >= this.props.percentage) {
-                this.state.width = this.props.percentage
                 clearInterval(this.interval)
             }
         }
