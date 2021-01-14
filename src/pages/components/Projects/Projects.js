@@ -1,8 +1,18 @@
 import React from "react"
 import ProjectTile from "./ProjectTile"
+import projectData from "./ProjectsData.json"
 import "./projects.css"
 
 function Projects() {
+    const projectTiles = projectData.map(project => 
+        <ProjectTile 
+            key={project.key}
+            title={project.title}
+            desc={project.desc}
+            url={project.url}
+        />
+    )
+
     return (
         <div id="projects" className="container-fluid pt-3">
             <div className="row">
@@ -10,8 +20,7 @@ function Projects() {
                     <h1 className="section-header pb-5">Projects</h1>
                     <div className="container-fluid">
                         <div className="row">
-                            <ProjectTile title="Stick Hero 6" desc="placeholder" url="https://github.com/danwei002/Stick-Hero-6"/>
-                            <ProjectTile title="Cards Bot" desc="placeholder"/>
+                            {projectTiles}
                         </div>
                     </div>
                 </div>

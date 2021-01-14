@@ -10,7 +10,7 @@ function SkillsList() {
 
     const skills = skillData.map(skill => 
         <Skillbar  
-            key={skill.key} l
+            key={skill.key}
             label={skill.label} 
             percentage={skill.percentage} 
             barColor="#008ac2"
