@@ -5,3 +5,4 @@ import 'bootstrap/js/dist/util'
 import 'bootstrap/js/dist/carousel'
 import 'bootstrap/js/dist/dropdown'
 import './src/pages/styles/global.css'
+import "react-toggle/style.css"

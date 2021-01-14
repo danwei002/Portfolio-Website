@@ -1,4 +1,5 @@
 import React from "react"
+import DarkModeSwitch from "./DarkModeSwitch"
 
 import 'jquery/dist/jquery.min.js'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -37,6 +38,9 @@ function Navbar() {
                         </li>
                         <li className="nav-item">
                             <a name="contact" href onClick={handleClick} onKeyDown={handleKeyPress} tabIndex={0} className="nav-link nav-link-grow-up navbar-item">Contact</a>
+                        </li>
+                        <li className="nav-item">
+                            <DarkModeSwitch/>
                         </li>
                     </ul>
                 </div>

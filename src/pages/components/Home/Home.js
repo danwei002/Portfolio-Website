@@ -2,7 +2,6 @@ import React, {useState, useEffect} from "react"
 
 import profilePicture from "../../imgs/profilePic.jpg"
 import "./home.css"
-
 import { FaEnvelope } from "@react-icons/all-files/fa/FaEnvelope"
 import { FaGithub } from "@react-icons/all-files/fa/FaGithub"
 import { FaLinkedin } from "@react-icons/all-files/fa/FaLinkedin"
