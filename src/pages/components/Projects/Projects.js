@@ -10,7 +10,7 @@ function Projects() {
                     <h1 className="section-header pb-5">Projects</h1>
                     <div className="container-fluid">
                         <div className="row">
-                            <ProjectTile title="Stick Hero 6" desc="placeholder"/>
+                            <ProjectTile title="Stick Hero 6" desc="placeholder" url="https://github.com/danwei002/Stick-Hero-6"/>
                             <ProjectTile title="Cards Bot" desc="placeholder"/>
                         </div>
                     </div>

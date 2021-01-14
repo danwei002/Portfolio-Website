@@ -14,7 +14,7 @@ export default function App() {
 
       <div 
         style={{
-          backgroundColor:"#000214", 
+          backgroundColor:"#121212", 
         }}
       >
         <Navbar/>
