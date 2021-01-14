@@ -5,6 +5,22 @@
     cursor: pointer;
 }
 
+.mode-toggler-dark {
+    height: 19px;
+    width: 19px;
+    margin: 9.5px 11px;
+    cursor: pointer;
+    content: url("/moon.png")
+}
+
+.mode-toggler-light {
+    height: 19px;
+    width: 19px;
+    margin: 9.5px 11px;
+    cursor: pointer;
+    content: url("/sun.png")
+}
+
 #navbarNav {
     /* Empty */
 }

@@ -38,6 +38,11 @@ function Navbar() {
                         <li className="nav-item">
                             <a name="contact" href onClick={handleClick} onKeyDown={handleKeyPress} tabIndex={0} className="nav-link nav-link-grow-up navbar-item">Contact</a>
                         </li>
+                        <li className="nav-item">
+                            <div>
+                                <img className="mode-toggler-dark" alt="display mode"/>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </nav>
