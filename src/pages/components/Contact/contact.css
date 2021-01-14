@@ -1,0 +1,40 @@
+.contact-container {
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 5px;
+    background-color: black;
+    width: 100%;
+    max-height: 100%;
+}
+
+.subheader {
+    font-weight: 600;
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.781);
+}
+
+.contact-content {
+    color: rgba(255, 255, 255, 0.781);
+}
+
+/* Mobile devices, portrait */
+@media only screen and (min-device-width : 250px) and (max-device-width : 480px) and (orientation: portrait) {
+    .contact-content {
+        font-size: 1.1rem;
+    }
+}
+
+/* Tablets, portrait */
+@media only screen and (min-device-width : 481px) and (max-device-width : 880px) and (orientation: portrait) {
+    .contact-content {
+        font-size: 1.1rem;
+    }
+}
+
+/* Mobile devices, landscape */
+@media only screen and (min-device-width : 250px) and (max-device-width : 820px) and (orientation: landscape) {
+    .contact-content {
+        font-size: 1.1rem;
+    }
+}

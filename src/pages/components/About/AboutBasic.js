@@ -2,9 +2,10 @@ import React from "react"
 
 function AboutBasic() {
     return (
-        <div className="row">
+        <div className="row pb-5">
             <div className="offset-xl-2 col-xl-5 offset-lg-1 col-lg-6 offset-md-1 col-md-6 offset-sm-1 col-sm-10 offset-1 col-10 pb-5">
                 <h1 className="section-header">About Me</h1>
+                <hr style={{borderColor: "white"}}/>
                 <h2 className="subheader my-3">Born in 2002. Programmer since 2013.</h2>
                 <p className="lead about-content">
                     Nice to meet you! I'm Daniel Wei, a programmer, student, and gamer who loves computers and programming. 

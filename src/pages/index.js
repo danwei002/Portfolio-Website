@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar/Navbar"
 import Home from "./components/Home/Home"
 import About from "./components/About/About"
 import Projects from "./components/Projects/Projects"
+import Contact from "./components/Contact/Contact"
 
 export default function App() {
   return (
@@ -17,10 +18,11 @@ export default function App() {
           backgroundColor:"#121212", 
         }}
       >
-        <Navbar/>
-        <Home/>
-        <About/>
-        <Projects/>
+        <Navbar />
+        <Home />
+        <About />
+        <Projects />
+        <Contact />
       </div>
     </div>
   )
