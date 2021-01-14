@@ -11,6 +11,13 @@ function Navbar() {
         document.getElementById(event.target.name).scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})
     }
 
+    function handleKeyPress(event) {
+        if (event.key === "Enter") {
+            event.preventDefault()
+            document.getElementById(event.target.name).scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})
+        }
+    }
+
     return (
         <div>
             <nav id="navbar-scrollspy" className="navbar navbar-expand-lg navbar-dark bg-transparent">
@@ -23,13 +30,13 @@ function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav ml-auto text-uppercase">
                         <li className="nav-item">
-                            <a name="about" onClick={handleClick} onKeyDown={handleClick} className="nav-link nav-link-grow-up navbar-item"><i className="fas fa-info-circle"></i> About</a>
+                            <a name="about" href onClick={handleClick} onKeyDown={handleKeyPress} tabIndex={0} className="nav-link nav-link-grow-up navbar-item">About</a>
                         </li>
                         <li className="nav-item">
-                            <a name="projects" onClick={handleClick} onKeyDown={handleClick} className="nav-link nav-link-grow-up navbar-item"><i className="fas fa-desktop"></i> Projects</a>
+                            <a name="projects" href onClick={handleClick} onKeyDown={handleKeyPress} tabIndex={0}  className="nav-link nav-link-grow-up navbar-item">Projects</a>
                         </li>
                         <li className="nav-item">
-                            <a name="contact" onClick={handleClick} onKeyDown={handleClick} className="nav-link nav-link-grow-up navbar-item"><i className="fas fa-address-book"></i> Contact</a>
+                            <a name="contact" href onClick={handleClick} onKeyDown={handleKeyPress} tabIndex={0} className="nav-link nav-link-grow-up navbar-item">Contact</a>
                         </li>
                     </ul>
                 </div>
