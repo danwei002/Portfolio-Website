@@ -16,7 +16,7 @@
     {
         "key": 3,
         "title": "Portfolio Website",
-        "desc": "The website you're on right now. A responsive portfolio website created using Gatsby and React.js as well as the Bootstrap library.",
+        "desc": "The website you're on right now. Created using Gatsby and React.js as well as the Bootstrap library.",
         "url": "https://github.com/danwei002/3D-Unity-Platformer",
         "tools": "Gatsby, React.js, HTML, CSS, JS, Bootstrap"
     },
@@ -51,7 +51,7 @@
     {
         "key": 8,
         "title": "Competitive Programming",
-        "desc": "A repository of all the competitive programming I've done for contests such as the Canadian Computing Competition.",
+        "desc": "A repository of my competitive programming problem solutions.",
         "url": "https://github.com/danwei002/Competitive-Programming",
         "tools": "C++, Java"
     }
