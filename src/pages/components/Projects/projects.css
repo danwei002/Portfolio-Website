@@ -20,6 +20,12 @@
     color: rgb(233, 227, 227);
 }
 
+.project-tile span {
+    font-weight: normal;
+    font-size: 0.87rem;
+    color: rgb(158, 157, 157);
+}
+
 .project-tile:hover {
     transition: all 0.27s ease-in-out;
     box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);

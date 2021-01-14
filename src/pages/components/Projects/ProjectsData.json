@@ -3,48 +3,56 @@
         "key": 1,
         "title": "Stick Hero 6",
         "desc": "A Raspberry Pi powered robot that plays the mobile game Stick Hero.",
-        "url": "https://github.com/danwei002/Stick-Hero-6"
+        "url": "https://github.com/danwei002/Stick-Hero-6",
+        "tools": "Python (NumPy, Pillow, GPIOZero, PiCamera)"
     },
     {
         "key": 2,
         "title": "3D Parkour Game",
         "desc": "A 3D Parkour/FPS hybrid game built using the Unity Engine and C#.",
-        "url": "https://github.com/danwei002/3D-Unity-Platformer"
+        "url": "https://github.com/danwei002/3D-Unity-Platformer",
+        "tools": "Unity, C#"
     },
     {
         "key": 3,
         "title": "Portfolio Website",
         "desc": "The website you're on right now. A responsive portfolio website created using Gatsby and React.js as well as the Bootstrap library.",
-        "url": "https://github.com/danwei002/3D-Unity-Platformer"
+        "url": "https://github.com/danwei002/3D-Unity-Platformer",
+        "tools": "Gatsby, React.js, HTML, CSS, JS, Bootstrap"
     },
     {
         "key": 4,
         "title": "Playing Cards Bot",
         "desc": "A Discord Bot written in Python for playing card games with friends in a Discord server.",
-        "url": "https://github.com/danwei002/Cards-Bot"
+        "url": "https://github.com/danwei002/Cards-Bot",
+        "tools": "Python (discord.py)"
     },
     {
         "key": 5,
         "title": "Battleship-Inspired Game",
         "desc": "A twist on the classic Battleship game developed in Java using the Greenfoot IDE.",
-        "url": "https://github.com/danwei002/Battleship-Project"
+        "url": "https://github.com/danwei002/Battleship-Project",
+        "tools": "Java, Greenfoot"
     },
     {
         "key": 6,
         "title": "Battlefield Simulation",
         "desc": "A Clash Royale inspired Battlefield simulation developed in Java using the Greenfoot IDE.",
-        "url": "https://github.com/danwei002/OOP-Simulation-Project"
+        "url": "https://github.com/danwei002/OOP-Simulation-Project",
+        "tools": "Java, Greenfoot"
     },
     {
         "key": 7,
         "title": "Not Mario Bros",
         "desc": "A platformer game inspired by Nintendo's Mario Bros developed in Java using the Greenfoot IDE.",
-        "url": "https://github.com/danwei002/Not-Mario-Bros"
+        "url": "https://github.com/danwei002/Not-Mario-Bros",
+        "tools": "Java, Greenfoot"
     },
     {
         "key": 8,
         "title": "Competitive Programming",
         "desc": "A repository of all the competitive programming I've done for contests such as the Canadian Computing Competition.",
-        "url": "https://github.com/danwei002/Competitive-Programming"
+        "url": "https://github.com/danwei002/Competitive-Programming",
+        "tools": "C++, Java"
     }
 ]

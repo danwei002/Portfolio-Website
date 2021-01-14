@@ -10,6 +10,7 @@ function Projects() {
             title={project.title}
             desc={project.desc}
             url={project.url}
+            tools={project.tools}
         />
     )
 
