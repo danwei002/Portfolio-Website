@@ -1,3 +1,17 @@
+.about-wrapper {
+    background-image: url('/background.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+}
+
+.skills-wrapper {
+    background-image: url('/background 2.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+}
+
 .subheader {
     font-weight: 600;
     font-size: 2rem;

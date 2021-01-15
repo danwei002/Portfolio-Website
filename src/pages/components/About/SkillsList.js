@@ -20,7 +20,7 @@ function SkillsList() {
     )
 
     return (
-        <div className="row">
+        <div  className="row skills-wrapper">
             <div className="text-right offset-xl-5 col-xl-5 offset-lg-4 col-lg-6 offset-md-4 col-md-6 offset-sm-1 col-sm-10 offset-1 col-10 pb-5">
                 <h2 className="subheader my-3">What am I good at?</h2>
                 {skills}

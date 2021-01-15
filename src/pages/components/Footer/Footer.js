@@ -8,7 +8,7 @@ import "./footer.css"
 
 function Footer() {
     return (
-        <div style={{marginTop: "16rem"}}className="container-fluid">
+        <div style={{marginTop: "7rem"}} className="footer-wrapper container-fluid">
             <div className="row">
                 <div className="footer-container offset-xl-2 col-xl-6 offset-lg-1 col-lg-6 offset-md-1 col-md-6 offset-sm-1 col-sm-6 offset-1 col-6 pb-5">
                     <h2 style={{fontWeight: "bold"}}>Daniel Wei</h2>
