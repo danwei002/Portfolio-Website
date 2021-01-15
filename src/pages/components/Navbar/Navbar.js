@@ -25,13 +25,13 @@ function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav ml-auto text-uppercase">
                         <li className="nav-item">
-                            <a name="about" href onClick={handleClick} onKeyDown={handleKeyPress} tabIndex={0} className="nav-link nav-link-grow-up navbar-item">About</a>
+                            <a style={{cursor: "pointer"}} name="about" href onClick={handleClick} onKeyDown={handleKeyPress} tabIndex={0} className="nav-link nav-link-grow-up navbar-item">About</a>
                         </li>
                         <li className="nav-item">
-                            <a name="projects" href onClick={handleClick} onKeyDown={handleKeyPress} tabIndex={0}  className="nav-link nav-link-grow-up navbar-item">Projects</a>
+                            <a style={{cursor: "pointer"}}  name="projects" href onClick={handleClick} onKeyDown={handleKeyPress} tabIndex={0}  className="nav-link nav-link-grow-up navbar-item">Projects</a>
                         </li>
                         <li className="nav-item">
-                            <a name="contact" href onClick={handleClick} onKeyDown={handleKeyPress} tabIndex={0} className="nav-link nav-link-grow-up navbar-item">Contact</a>
+                            <a style={{cursor: "pointer"}}  name="contact" href onClick={handleClick} onKeyDown={handleKeyPress} tabIndex={0} className="nav-link nav-link-grow-up navbar-item">Contact</a>
                         </li>
                         {/*<li className="nav-item">
                             <div>
