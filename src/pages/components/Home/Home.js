@@ -39,6 +39,9 @@ function Home() {
                         <button onClick={handleClick} className="mt-4 btn btn-primary py-2 px-3">
                             <span className="lead">Get To Know Me</span>
                         </button>
+                        <a href="Resume.pdf" className="mt-4 ml-3 btn btn-success py-2 px-3">
+                            <span className="lead">My Resume</span>
+                        </a>
                         <br/>
                         <a aria-label={"Email"} href="mailto:danwei002@gmail.com"><FaEnvelope size={32} color={"#deddcc"} className="mt-5 mr-5 grow-hover-effect"/></a>
                         <a aria-label={"GitHub"} href="https://github.com/danwei002"><FaGithub size={32} color={"#9413f0"} className="mt-5 mr-5 grow-hover-effect"/></a>

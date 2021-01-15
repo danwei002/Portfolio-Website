@@ -19,8 +19,8 @@ function ProjectTile(props) {
                 <p className="lead">
                     {props.desc}
                 </p>
-                <footer style={{position: "absolute", bottom: "0"}} className="mb-2">
-                    <span style={{float: "right"}}>
+                <footer style={{position: "absolute", bottom: "0"}} className="mb-3">
+                    <span>
                         {props.tools}
                     </span>
                 </footer>
