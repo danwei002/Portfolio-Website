@@ -1,5 +1,12 @@
 [
     {
+        "key": 0,
+        "title": "Recipe.io",
+        "desc": "A full-stack web application for finding recipes based on your available ingredients.",
+        "url": "https://github.com/danwei002/Recipe.io",
+        "tools": "React.js, Node.js, Express.js, Bootstrap"
+    },
+    {
         "key": 1,
         "title": "Stick Hero 6",
         "desc": "A Raspberry Pi powered robot that plays the mobile game Stick Hero.",
