@@ -1,7 +1,7 @@
 [
     {
         "key": 1,
-        "label": "Java",
+        "label": "C++",
         "percentage": 100
     },
     {
@@ -11,7 +11,7 @@
     },
     {
         "key": 3,
-        "label": "C++",
+        "label": "Java",
         "percentage": 80
     },
     {
