@@ -8,7 +8,8 @@
   Portfolio Website
 </h1>
 
-A personal portfolio website built using React.js and Gatsby as well as the Bootstrap and jQuery libraries. 
+A personal portfolio website built using React.js and Gatsby as well as the Bootstrap and jQuery libraries. You can find starter templates for inspiration
+here https://www.gatsbyjs.com/starters/. I personally took inspiration from https://www.gatsbyjs.com/starters/smakosh/gatsby-portfolio-dev this template.
 
 ## 🚀 Quick start
 
