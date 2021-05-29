@@ -1,10 +1,6 @@
-import React, { useContext } from "react"
-import { ThemeContext } from 'styled-components'
+import React from "react"
 
 function Navbar(props) {
-    const themeCtx = useContext(ThemeContext)
-    const navClassNames = themeCtx && themeCtx.mode === 'dark' ? "navbar navbar-expand-lg  bg-transparent navbar-dark py-3": "navbar navbar-expand-lg  bg-transparent navbar-light py-3"
-
     function handleClick(event) {
         event.preventDefault()
         document.getElementById(event.target.name).scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})
@@ -19,7 +15,7 @@ function Navbar(props) {
 
     return (
         <div>
-            <nav id="navbar-scrollspy" className={navClassNames}>
+            <nav id="navbar-scrollspy" className="navbar navbar-expand-lg bg-transparent py-3">
                 <a className="navbar-brand navbar-item" href="Resume.pdf">Daniel Wei</a>
                 <span className="navbar-brand navbar-item navbar-mode-toggle">{props.themeToggle}</span>
                 
@@ -30,13 +26,13 @@ function Navbar(props) {
                 <div className="collapse navbar-collapse navbarNav">
                     <ul className="navbar-nav ml-auto text-uppercase">
                         <li className="nav-item">
-                            <a style={{cursor: "pointer"}} name="about" href onClick={handleClick} onKeyDown={handleKeyPress} tabIndex={0} className="nav-link nav-link-grow-up navbar-item">About</a>
+                            <a style={{cursor: "pointer"}} name="about" href="#about" onClick={handleClick} onKeyDown={handleKeyPress} tabIndex={0} className="nav-link nav-link-grow-up navbar-item">About</a>
                         </li>
                         <li className="nav-item">
-                            <a style={{cursor: "pointer"}}  name="projects" href onClick={handleClick} onKeyDown={handleKeyPress} tabIndex={0}  className="nav-link nav-link-grow-up navbar-item">Projects</a>
+                            <a style={{cursor: "pointer"}}  name="projects" href="#projects" onClick={handleClick} onKeyDown={handleKeyPress} tabIndex={0}  className="nav-link nav-link-grow-up navbar-item">Projects</a>
                         </li>
                         <li className="nav-item">
-                            <a style={{cursor: "pointer"}}  name="contact" href onClick={handleClick} onKeyDown={handleKeyPress} tabIndex={0} className="nav-link nav-link-grow-up navbar-item">Contact</a>
+                            <a style={{cursor: "pointer"}}  name="contact" href="#contact" onClick={handleClick} onKeyDown={handleKeyPress} tabIndex={0} className="nav-link nav-link-grow-up navbar-item">Contact</a>
                         </li>
                     </ul>
                 </div>

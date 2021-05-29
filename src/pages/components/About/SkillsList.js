@@ -1,25 +1,20 @@
-import React, {useState, useContext } from "react"
+import React, { useState } from "react"
 import handleViewport from "react-in-viewport"
 import Skillbar from "./Skillbar"
 import skillData from "./SkillData.json"
-import { ThemeContext } from 'styled-components'
 
 const ViewportBlock = handleViewport(Skillbar,)
 
 function SkillsList() {
     const [inView, setInView] = useState(false)
-    const themeCtx = useContext(ThemeContext)
-
-    let barColor = themeCtx && themeCtx.mode === 'dark' ? '#008ac2': '#008ac2'
-    let labelColor = themeCtx && themeCtx.mode === 'dark' ? '#00668f': '#00668f'
 
     const skills = skillData.map(skill => 
         <Skillbar  
             key={skill.key}
             label={skill.label} 
             percentage={skill.percentage} 
-            barColor={barColor}
-            labelColor={labelColor}
+            barColor='#008ac2'
+            labelColor='#00668f'
             inView={inView}
         />
     )

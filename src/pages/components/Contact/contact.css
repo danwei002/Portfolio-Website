@@ -1,19 +1,7 @@
-.contact-container-dark {
+.contact-container {
     border-style: solid;
-    border-color: white;
     border-width: 1px;
     border-radius: 5px;
-    background-color: black;
-    width: 100%;
-    max-height: 100%;
-}
-
-.contact-container-light {
-    border-style: solid;
-    border-color: black;
-    border-width: 1px;
-    border-radius: 5px;
-    background-color: #e8f0ff;
     width: 100%;
     max-height: 100%;
 }
@@ -28,14 +16,6 @@
     background-repeat: no-repeat;
     background-position: right center;
     background-size: contain;
-}
-
-.contact-content-dark {
-    color: rgba(255, 255, 255, 0.781);
-}
-
-.contact-content-light {
-    color: rgba(7, 7, 7, 0.781);
 }
 
 /* Mobile devices, portrait */

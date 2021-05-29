@@ -1,15 +1,12 @@
-import React, { useContext } from "react"
+import React from "react"
 import { FaGithub } from "@react-icons/all-files/fa/FaGithub"
 import { FaLinkedin } from "@react-icons/all-files/fa/FaLinkedin"
 import { FaEnvelope } from "@react-icons/all-files/fa/FaEnvelope"
 import { FaFileAlt } from "@react-icons/all-files/fa/FaFileAlt"
-import { ThemeContext } from 'styled-components' 
 
 import "./footer.css"
 
 function Footer() {
-    const themeCtx = useContext(ThemeContext)
-    const color = themeCtx && themeCtx.mode === 'dark' ? 'rgba(255, 255, 255, 0.781)': '#202422'
     return (
         <div style={{marginTop: "7rem"}} className="footer-wrapper container-fluid">
             <div className="row">
@@ -21,10 +18,10 @@ function Footer() {
                     </footer>
                 </div>
                 <div className="footer-container col-xl-2 col-lg-4 col-md-4 col-sm-4 col-4 text-right">
-                    <a aria-label={"GitHub"} href="https://github.com/danwei002"><FaGithub size={27} color={color} className="mr-3 grow-hover-effect" /></a>
-                    <a aria-label={"LinkedIn"} href="https://www.linkedin.com/in/danwei002/"><FaLinkedin size={27} color={color} className="mr-3 grow-hover-effect" /></a>
-                    <a aria-label={"Email"} href="mailto:danwei002@gmail.com"><FaEnvelope size={27} color={color} className="mr-3 grow-hover-effect" /></a>
-                    <a aria-label={"Resume"} href="Resume.pdf"><FaFileAlt size={27} color={color} className="mr-3 grow-hover-effect" /></a>
+                    <a aria-label={"GitHub"} href="https://github.com/danwei002"><FaGithub size={27} className="mr-3 footer-icon grow-hover-effect" /></a>
+                    <a aria-label={"LinkedIn"} href="https://www.linkedin.com/in/danwei002/"><FaLinkedin size={27} className="mr-3 footer-icon grow-hover-effect" /></a>
+                    <a aria-label={"Email"} href="mailto:danwei002@gmail.com"><FaEnvelope size={27} className="mr-3 footer-icon grow-hover-effect" /></a>
+                    <a aria-label={"Resume"} href="Resume.pdf"><FaFileAlt size={27} className="mr-3 footer-icon grow-hover-effect" /></a>
                 </div>
             </div>
         </div>

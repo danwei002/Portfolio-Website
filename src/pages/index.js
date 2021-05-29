@@ -30,7 +30,7 @@ export default function App() {
 
   const themeToggle = (
     <Toggle 
-      checked={theme === lightMode} 
+      checked={prevTheme === 'light'} 
       onChange={onClick} 
       icons={{
         checked: <FaSun className='pb-2 pr-2' color={"#fcba03"} size={21}/>,

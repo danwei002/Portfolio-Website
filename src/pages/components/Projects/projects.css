@@ -1,5 +1,4 @@
-.project-tile-light {
-    background-color: #e8f0ff;
+.project-tile {
     width: 95%;
     height: 237px;
     top: 0px;
@@ -8,62 +7,23 @@
     box-shadow: rgba(0, 0, 0, 0.11) 0px 1px 6px 0px;
 }
 
-.project-tile-light h1 {
+.project-tile h1 {
     font-size: 1.17rem;
     font-weight: 650;
-    color: black;
 }
 
-.project-tile-light p {
+.project-tile p {
     font-weight: 500;
     font-size: 1rem;
-    color: rgb(39, 39, 39);
 }
 
-.project-tile-light span {
+.project-tile span {
     font-weight: normal;
     font-size: 0.87rem;
-    color: rgb(61, 61, 61);
 }
 
-.project-tile-light:hover {
+.project-tile:hover {
     transition: all 0.27s ease-in-out;
     box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
     top: -7px;
-    border: 1px solid #000000;
-}
-
-.project-tile-dark {
-    background-color: #0d0d0d;
-    width: 95%;
-    height: 237px;
-    top: 0px;
-    position: relative;
-    cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.11) 0px 1px 6px 0px;
-}
-
-.project-tile-dark h1 {
-    font-size: 1.17rem;
-    font-weight: 650;
-    color: white;
-}
-
-.project-tile-dark p {
-    font-weight: 500;
-    font-size: 1rem;
-    color: rgb(233, 227, 227);
-}
-
-.project-tile-dark span {
-    font-weight: normal;
-    font-size: 0.87rem;
-    color: rgb(158, 157, 157);
-}
-
-.project-tile-dark:hover {
-    transition: all 0.27s ease-in-out;
-    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
-    top: -7px;
-    border: 1px solid #ffffff;
 }
