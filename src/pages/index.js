@@ -13,9 +13,14 @@ import Projects from "./components/Projects/Projects"
 import Contact from "./components/Contact/Contact"
 import Footer from "./components/Footer/Footer"
 
+const isBrowser = typeof window !== "undefined"
 
 export default function App() {
-  const prevTheme = window.localStorage.getItem('theme')
+  let prevTheme
+  if (isBrowser) {
+    prevTheme = window.localStorage.getItem('theme')
+  }
+  
   const [theme, setTheme] = useState(prevTheme ==='light' ? lightMode: darkMode);
 
   const onClick = () => {
