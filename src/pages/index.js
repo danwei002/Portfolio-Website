@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { ThemeProvider } from 'styled-components'
-import { lightMode, darkMode } from "./styles/theme"
-import { GlobalStyles } from "./styles/global"
+import { lightMode, darkMode } from "../theme"
+import { GlobalStyles } from "../global"
 import { Helmet } from "react-helmet"
 import { FaSun } from '@react-icons/all-files/fa/FaSun'
 import { FaMoon } from '@react-icons/all-files/fa/FaMoon'
