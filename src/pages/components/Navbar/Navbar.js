@@ -3,7 +3,7 @@ import { ThemeContext } from 'styled-components'
 
 function Navbar(props) {
     const themeCtx = useContext(ThemeContext)
-    const navClassNames = themeCtx.mode === 'dark' ? "navbar navbar-expand-lg  bg-transparent navbar-dark py-3": "navbar navbar-expand-lg  bg-transparent navbar-light py-3"
+    const navClassNames = themeCtx && themeCtx.mode === 'dark' ? "navbar navbar-expand-lg  bg-transparent navbar-dark py-3": "navbar navbar-expand-lg  bg-transparent navbar-light py-3"
 
     function handleClick(event) {
         event.preventDefault()

@@ -3,7 +3,7 @@ import { ThemeContext } from 'styled-components'
 
 function ProjectTile(props) {
     const themeCtx = useContext(ThemeContext);
-    const projectTileClasses = themeCtx.mode === 'dark' ? "project-tile-dark pt-4 pl-3 pr-3" : "project-tile-light pt-4 pl-3 pr-3"
+    const projectTileClasses = themeCtx && themeCtx.mode === 'dark' ? "project-tile-dark pt-4 pl-3 pr-3" : "project-tile-light pt-4 pl-3 pr-3"
 
     function handleClick() {
         window.open(props.url)

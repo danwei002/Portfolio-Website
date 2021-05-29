@@ -9,7 +9,7 @@ import "./footer.css"
 
 function Footer() {
     const themeCtx = useContext(ThemeContext)
-    const color = themeCtx.mode === 'dark' ? 'rgba(255, 255, 255, 0.781)': '#202422'
+    const color = themeCtx && themeCtx.mode === 'dark' ? 'rgba(255, 255, 255, 0.781)': '#202422'
     return (
         <div style={{marginTop: "7rem"}} className="footer-wrapper container-fluid">
             <div className="row">

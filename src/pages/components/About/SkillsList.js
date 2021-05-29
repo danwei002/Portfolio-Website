@@ -10,8 +10,8 @@ function SkillsList() {
     const [inView, setInView] = useState(false)
     const themeCtx = useContext(ThemeContext)
 
-    let barColor = themeCtx.mode === 'dark' ? '#008ac2': '#008ac2'
-    let labelColor = themeCtx.mode === 'dark' ? '#00668f': '#00668f'
+    let barColor = themeCtx && themeCtx.mode === 'dark' ? '#008ac2': '#008ac2'
+    let labelColor = themeCtx && themeCtx.mode === 'dark' ? '#00668f': '#00668f'
 
     const skills = skillData.map(skill => 
         <Skillbar  

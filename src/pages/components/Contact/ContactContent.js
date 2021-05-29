@@ -6,7 +6,7 @@ import { ThemeContext } from 'styled-components'
 
 function ContactContent() {
     const themeCtx = useContext(ThemeContext)
-    let isDarkMode = themeCtx.mode === 'dark'
+    let isDarkMode = themeCtx && themeCtx.mode === 'dark'
     let internalColor = isDarkMode ? '#00ad5f': '#00de7a'
     const outerClassName = isDarkMode ? 'contact-container-dark p-3' : 'contact-container-light p-3'
 
