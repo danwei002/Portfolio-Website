@@ -1,5 +1,11 @@
-import React from "react"
+import React, { useState } from "react"
+import { ThemeProvider } from 'styled-components'
+import { lightMode, darkMode } from "./styles/theme"
+import { GlobalStyles } from "./styles/global"
 import { Helmet } from "react-helmet"
+import { FaSun } from '@react-icons/all-files/fa/FaSun'
+import { FaMoon } from '@react-icons/all-files/fa/FaMoon'
+import Toggle from 'react-toggle'
 import Navbar from "./components/Navbar/Navbar"
 import Home from "./components/Home/Home"
 import About from "./components/About/About"
@@ -7,25 +13,42 @@ import Projects from "./components/Projects/Projects"
 import Contact from "./components/Contact/Contact"
 import Footer from "./components/Footer/Footer"
 
+
 export default function App() {
+  const prevTheme = window.localStorage.getItem('theme')
+  const [theme, setTheme] = useState(prevTheme ==='light' ? lightMode: darkMode);
+
+  const onClick = () => {
+    setTheme(theme === darkMode ? lightMode: darkMode);
+    window.localStorage.setItem('theme', theme === darkMode ? 'light': 'dark')
+  }
+
+  const themeToggle = (
+    <Toggle 
+      checked={theme === lightMode} 
+      onChange={onClick} 
+      icons={{
+        checked: <FaSun className='pb-2 pr-2' color={"#fcba03"} size={21}/>,
+        unchecked: <FaMoon className='pb-2 pr-2' color={"#76a0b0"} size={20}/>
+      }}
+    />   
+  )
+
   return (
+    
     <div>
       <Helmet>
         <title>Daniel Wei</title>
       </Helmet>
-
-      <div 
-        style={{
-          backgroundColor:"#121212", 
-        }}
-      >
-        <Navbar />
-        <Home />
-        <About />
-        <Projects />
-        <Contact />
-        <Footer />
-      </div>
+      <ThemeProvider theme={theme}>
+          <GlobalStyles/>
+          <Navbar themeToggle={themeToggle}/>
+          <Home />
+          <About />
+          <Projects />
+          <Contact />
+          <Footer />
+      </ThemeProvider>
     </div>
   )
 }

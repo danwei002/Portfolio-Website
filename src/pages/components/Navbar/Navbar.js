@@ -1,6 +1,10 @@
-import React from "react"
+import React, { useContext } from "react"
+import { ThemeContext } from 'styled-components'
 
-function Navbar() {
+function Navbar(props) {
+    const themeCtx = useContext(ThemeContext)
+    const navClassNames = themeCtx.mode === 'dark' ? "navbar navbar-expand-lg  bg-transparent navbar-dark py-3": "navbar navbar-expand-lg  bg-transparent navbar-light py-3"
+
     function handleClick(event) {
         event.preventDefault()
         document.getElementById(event.target.name).scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})
@@ -15,9 +19,10 @@ function Navbar() {
 
     return (
         <div>
-            <nav id="navbar-scrollspy" className="navbar navbar-expand-lg navbar-dark bg-transparent">
-                <a className="navbar-brand navbar-item" href="https://danwei002.github.io/">Daniel Wei</a>
-
+            <nav id="navbar-scrollspy" className={navClassNames}>
+                <a className="navbar-brand navbar-item" href="Resume.pdf">Daniel Wei</a>
+                <span className="navbar-brand navbar-item navbar-mode-toggle">{props.themeToggle}</span>
+                
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>

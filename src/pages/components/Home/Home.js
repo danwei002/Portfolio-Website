@@ -43,8 +43,8 @@ function Home() {
                             <span className="lead">My Resume</span>
                         </a>
                         <br/>
-                        <a aria-label={"Email"} href="mailto:danwei002@gmail.com"><FaEnvelope size={32} color={"#deddcc"} className="mt-5 mr-5 grow-hover-effect"/></a>
-                        <a aria-label={"GitHub"} href="https://github.com/danwei002"><FaGithub size={32} color={"#9413f0"} className="mt-5 mr-5 grow-hover-effect"/></a>
+                        <a aria-label={"Email"} href="mailto:danwei002@gmail.com"><FaEnvelope size={32} color={"#a690a4"} className="mt-5 mr-5 grow-hover-effect"/></a>
+                        <a aria-label={"GitHub"} href="https://github.com/danwei002"><FaGithub size={32} color={"#8632c2"} className="mt-5 mr-5 grow-hover-effect"/></a>
                         <a aria-label={"LinkedIn"} href="https://www.linkedin.com/in/danwei002/"><FaLinkedin size={32} color={"#0e76a8"} className="mt-5 mr-5 grow-hover-effect"/></a>
                     </div>
                     <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 d-flex justify-content-center">

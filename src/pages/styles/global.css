@@ -3,7 +3,6 @@ body {
 }
 
 .section-header {
-    color: rgba(255, 255, 255, 0.781);
     font-weight: bold;
 }
 
@@ -27,3 +26,9 @@ body {
   -webkit-transform: scale(1.27);
   transform: scale(1.27);
 }
+
+.navbar-mode-toggle {
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+  }
